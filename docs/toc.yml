@@ -1,0 +1,13 @@
+version: 1
+project:
+  toc: 
+    - file: root.md
+    - title: ESPO-G6-post2100
+      children:
+        - file: espo-g6-post2100/intro.md
+        - file: espo-g6-post2100/content.md
+        - file: espo-g6-post2100/case_studies.md
+    - file: glossary.md
+
+  static_files: 
+    - espo-g6-post2100/figs/annex

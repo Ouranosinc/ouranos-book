@@ -1,0 +1,5 @@
+/* Match MyST's generated wrapper; iframe content has its own document. */
+.relative.inline-block:has(> iframe[src*="/annex/graph_guide_region_ts_"]) {
+  width: 100% !important;
+  padding-bottom: 85% !important;
+}

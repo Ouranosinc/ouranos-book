@@ -1,0 +1,20 @@
+version: 1 
+
+project: 
+  contributors:
+    - id: bresson
+      name: Émilie Bresson
+      orcid: 0000-0002-5289-4937
+      affiliations: 
+        - id: oura
+    - id: huard
+      name: David Huard
+      orcid: 0000-0003-0311-5498
+      email: huard.david@ouranos.ca
+      affiliations:
+        - id: oura
+      
+  affiliations:
+    - id: oura
+      name: Ouranos
+      address: 550 Sherbrooke Street West, Montreal, Quebec, Canada

@@ -1,0 +1,15 @@
+version: 1
+project: 
+
+  abbreviations:
+    CMIP: Coupled Model Intercomparison Project
+    CMIP6: Coupled Model Intercomparison Project Phase 6
+    CMIP7: Coupled Model Intercomparison Project Phase 7
+    SSP: Shared Socioeconomic Pathways
+    RCP: Representative Concentration Pathways
+    CaSR: Canadian Surface Reanalysis
+    ESPO: Ensemble de simulations post-traitées d'Ouranos
+    GHG: Greenhouse Gas
+    IAM: Integrated Assessment Model
+    RCM: Regional Climate Model
+    TCRE: Transient climate response to cumulative emissions

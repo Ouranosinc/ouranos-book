@@ -1,0 +1,22 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+extends:
+  - abbreviations.yml
+  - authors.yml
+  - toc.yml
+  
+project:
+  id: ddbfec1a-2f7c-47ef-8aa3-ad931d54ea4e
+  title: Ouranos documentation
+    
+  # keywords: []
+  
+  
+site:
+  nav: []
+  template: book-theme
+  options:
+    style: custom.css
+    logo: images/ouranos_logo_horizontal_couleur.png
+    favicon: images/favicon.ico
+    outline_maxdepth: 2
