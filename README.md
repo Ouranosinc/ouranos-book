@@ -8,14 +8,26 @@ Public docs for research projects, datasets, etc.
 mamba install -c conda-forge "jupyter-book"
 ```
 
+Note that all figures (*.png, *.jpg, *.svg, *.pdf) are committed to this repo through `git lfs`. This means that only the text content is version controlled, not the graphical content. This is done to avoid cluttering the repo with multiple versions of the same figures.
+
+To export to PDF, also install ``typst``
+
+``bash
+
+mamba install typst
+```
+
 ## Build 
 
 ```bash
 
 jupyter book start
 ```
-
 The result should be visible in your browser at http://localhost:3000
+
+
+
+
 
 
 ## Book configuration and content
@@ -69,7 +81,6 @@ The issue with this approach is that the renderer does not know what size the fi
 ```xml
 <svg width:"100%" preserverAspectRatio:"xMidYMid meet" style:"width: 100%; height: auto; display: block">
 ```
-
 and that a ``custom.css`` includes the following rule:
 
 ```css

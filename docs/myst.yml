@@ -8,10 +8,13 @@ extends:
 project:
   id: ddbfec1a-2f7c-47ef-8aa3-ad931d54ea4e
   title: Ouranos documentation
+  github: ouranosinc/ouranos-book
+  exports:
+    - format: pdf
+      template: lapreprint-typst
+      articles: espo-g6-post2100/content.md
+      output: exports/espo-g6-post2100.pdf
     
-  # keywords: []
-  
-  
 site:
   nav: []
   template: book-theme
