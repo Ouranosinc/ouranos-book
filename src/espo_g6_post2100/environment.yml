@@ -1,0 +1,38 @@
+channels:
+  - conda-forge
+dependencies:
+  - python>=3.11
+  - numpy
+  - scipy
+  - joblib
+  - bottleneck
+  - nc-time-axis
+  - xhistogram
+  - owslib
+  - clisops
+  - aiohttp
+  - gcsfs
+  - s3fs
+  - intake
+  - intake-esm
+  - pandas
+  - xarray
+  - dask
+  - distributed
+  - netcdf4
+  - h5netcdf
+  - cftime
+  - cf_xarray
+  - xesmf
+  - xbitinfo
+  - siphon
+  - matplotlib
+  - cartopy
+  - geopandas
+  - shapely
+  - pyproj
+  - fiona
+  - pip
+  - pip:
+      # Replace with -e ../../dpca-figs when using the adjacent local project.
+      - dpca

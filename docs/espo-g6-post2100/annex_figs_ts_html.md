@@ -9,6 +9,9 @@
 
 Decadal mean time series of temperature and precipitation over the Appalachia region.
 :::
+```{raw} typst
+#pagebreak()
+```
 
 ### CPlains
 
@@ -20,6 +23,9 @@ Decadal mean time series of temperature and precipitation over the Appalachia re
 
 Decadal mean time series of temperature and precipitation over the CPlains region.
 :::
+```{raw} typst
+#pagebreak()
+```
 
 ### CentralTundra
 
@@ -31,6 +37,9 @@ Decadal mean time series of temperature and precipitation over the CPlains regio
 
 Decadal mean time series of temperature and precipitation over the CentralTundra region.
 :::
+```{raw} typst
+#pagebreak()
+```
 
 ### DeepSouth
 
@@ -42,6 +51,9 @@ Decadal mean time series of temperature and precipitation over the CentralTundra
 
 Decadal mean time series of temperature and precipitation over the DeepSouth region.
 :::
+```{raw} typst
+#pagebreak()
+```
 
 ### EastBoreal
 
@@ -53,6 +65,9 @@ Decadal mean time series of temperature and precipitation over the DeepSouth reg
 
 Decadal mean time series of temperature and precipitation over the EastBoreal region.
 :::
+```{raw} typst
+#pagebreak()
+```
 
 ### EastTaiga
 
@@ -64,6 +79,9 @@ Decadal mean time series of temperature and precipitation over the EastBoreal re
 
 Decadal mean time series of temperature and precipitation over the EastTaiga region.
 :::
+```{raw} typst
+#pagebreak()
+```
 
 ### EastTundra
 
@@ -75,6 +93,9 @@ Decadal mean time series of temperature and precipitation over the EastTaiga reg
 
 Decadal mean time series of temperature and precipitation over the EastTundra region.
 :::
+```{raw} typst
+#pagebreak()
+```
 
 ### GreatBasin
 
@@ -86,6 +107,9 @@ Decadal mean time series of temperature and precipitation over the EastTundra re
 
 Decadal mean time series of temperature and precipitation over the GreatBasin region.
 :::
+```{raw} typst
+#pagebreak()
+```
 
 ### GreatLakes
 
@@ -97,6 +121,9 @@ Decadal mean time series of temperature and precipitation over the GreatBasin re
 
 Decadal mean time series of temperature and precipitation over the GreatLakes region.
 :::
+```{raw} typst
+#pagebreak()
+```
 
 ### Mezquital
 
@@ -108,6 +135,9 @@ Decadal mean time series of temperature and precipitation over the GreatLakes re
 
 Decadal mean time series of temperature and precipitation over the Mezquital region.
 :::
+```{raw} typst
+#pagebreak()
+```
 
 ### MidAtlantic
 
@@ -119,6 +149,9 @@ Decadal mean time series of temperature and precipitation over the Mezquital reg
 
 Decadal mean time series of temperature and precipitation over the MidAtlantic region.
 :::
+```{raw} typst
+#pagebreak()
+```
 
 ### NPlains
 
@@ -130,6 +163,9 @@ Decadal mean time series of temperature and precipitation over the MidAtlantic r
 
 Decadal mean time series of temperature and precipitation over the NPlains region.
 :::
+```{raw} typst
+#pagebreak()
+```
 
 ### NRockies
 
@@ -141,6 +177,9 @@ Decadal mean time series of temperature and precipitation over the NPlains regio
 
 Decadal mean time series of temperature and precipitation over the NRockies region.
 :::
+```{raw} typst
+#pagebreak()
+```
 
 ### NorthAtlantic
 
@@ -152,6 +191,9 @@ Decadal mean time series of temperature and precipitation over the NRockies regi
 
 Decadal mean time series of temperature and precipitation over the NorthAtlantic region.
 :::
+```{raw} typst
+#pagebreak()
+```
 
 ### PacificNW
 
@@ -163,6 +205,9 @@ Decadal mean time series of temperature and precipitation over the NorthAtlantic
 
 Decadal mean time series of temperature and precipitation over the PacificNW region.
 :::
+```{raw} typst
+#pagebreak()
+```
 
 ### PacificSW
 
@@ -174,6 +219,9 @@ Decadal mean time series of temperature and precipitation over the PacificNW reg
 
 Decadal mean time series of temperature and precipitation over the PacificSW region.
 :::
+```{raw} typst
+#pagebreak()
+```
 
 ### Prairie
 
@@ -185,6 +233,9 @@ Decadal mean time series of temperature and precipitation over the PacificSW reg
 
 Decadal mean time series of temperature and precipitation over the Prairie region.
 :::
+```{raw} typst
+#pagebreak()
+```
 
 ### SPlains
 
@@ -196,6 +247,9 @@ Decadal mean time series of temperature and precipitation over the Prairie regio
 
 Decadal mean time series of temperature and precipitation over the SPlains region.
 :::
+```{raw} typst
+#pagebreak()
+```
 
 ### SRockies
 
@@ -207,6 +261,9 @@ Decadal mean time series of temperature and precipitation over the SPlains regio
 
 Decadal mean time series of temperature and precipitation over the SRockies region.
 :::
+```{raw} typst
+#pagebreak()
+```
 
 ### Southeast
 
@@ -218,6 +275,9 @@ Decadal mean time series of temperature and precipitation over the SRockies regi
 
 Decadal mean time series of temperature and precipitation over the Southeast region.
 :::
+```{raw} typst
+#pagebreak()
+```
 
 ### Southwest
 
@@ -229,6 +289,9 @@ Decadal mean time series of temperature and precipitation over the Southeast reg
 
 Decadal mean time series of temperature and precipitation over the Southwest region.
 :::
+```{raw} typst
+#pagebreak()
+```
 
 ### WestBoreal
 
@@ -240,6 +303,9 @@ Decadal mean time series of temperature and precipitation over the Southwest reg
 
 Decadal mean time series of temperature and precipitation over the WestBoreal region.
 :::
+```{raw} typst
+#pagebreak()
+```
 
 ### WestTaiga
 
@@ -251,6 +317,9 @@ Decadal mean time series of temperature and precipitation over the WestBoreal re
 
 Decadal mean time series of temperature and precipitation over the WestTaiga region.
 :::
+```{raw} typst
+#pagebreak()
+```
 
 ### WestTundra
 
@@ -262,3 +331,6 @@ Decadal mean time series of temperature and precipitation over the WestTaiga reg
 
 Decadal mean time series of temperature and precipitation over the WestTundra region.
 :::
+```{raw} typst
+#pagebreak()
+```
