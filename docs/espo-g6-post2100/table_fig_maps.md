@@ -14,4 +14,4 @@ Links to the map figures for each Bukovsky region.
 | UKESM1.0-LL | @fig-map-UKESM1-0-LL-ssp126 | | | | @fig-map-UKESM1-0-LL-ssp585 |
 | MRI-ESM2.0 | @fig-map-MRI-ESM2-0-ssp126 | | | @fig-map-MRI-ESM2-0-ssp534-over | @fig-map-MRI-ESM2-0-ssp585 |
 | NorESM2-MM | | | | | @fig-map-NorESM2-MM-ssp585 |
-| | | | | | | |:::
+:::

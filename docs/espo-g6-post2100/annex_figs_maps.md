@@ -9,6 +9,9 @@
 
 Maps of extreme daily temperature and precipitation per season over the entire simulation.
 :::
+```{raw} typst
+#pagebreak()
+```
 
 ### ACCESS-ESM1.5
 
@@ -21,6 +24,9 @@ Maps of extreme daily temperature and precipitation per season over the entire s
 
 Maps of extreme daily temperature and precipitation per season over the entire simulation.
 :::
+```{raw} typst
+#pagebreak()
+```
 
 #### SSP5-8.5
 
@@ -31,6 +37,9 @@ Maps of extreme daily temperature and precipitation per season over the entire s
 
 Maps of extreme daily temperature and precipitation per season over the entire simulation.
 :::
+```{raw} typst
+#pagebreak()
+```
 
 ### CanESM5
 
@@ -43,6 +52,9 @@ Maps of extreme daily temperature and precipitation per season over the entire s
 
 Maps of extreme daily temperature and precipitation per season over the entire simulation.
 :::
+```{raw} typst
+#pagebreak()
+```
 
 #### SSP5-8.5
 
@@ -53,6 +65,9 @@ Maps of extreme daily temperature and precipitation per season over the entire s
 
 Maps of extreme daily temperature and precipitation per season over the entire simulation.
 :::
+```{raw} typst
+#pagebreak()
+```
 
 #### SSP5-3.4-OS
 
@@ -63,6 +78,9 @@ Maps of extreme daily temperature and precipitation per season over the entire s
 
 Maps of extreme daily temperature and precipitation per season over the entire simulation.
 :::
+```{raw} typst
+#pagebreak()
+```
 
 ### CNRM-ESM2.1
 
@@ -75,6 +93,9 @@ Maps of extreme daily temperature and precipitation per season over the entire s
 
 Maps of extreme daily temperature and precipitation per season over the entire simulation.
 :::
+```{raw} typst
+#pagebreak()
+```
 
 ### EC-Earth3-Veg
 
@@ -87,6 +108,9 @@ Maps of extreme daily temperature and precipitation per season over the entire s
 
 Maps of extreme daily temperature and precipitation per season over the entire simulation.
 :::
+```{raw} typst
+#pagebreak()
+```
 
 #### SSP2-4.5
 
@@ -97,6 +121,9 @@ Maps of extreme daily temperature and precipitation per season over the entire s
 
 Maps of extreme daily temperature and precipitation per season over the entire simulation.
 :::
+```{raw} typst
+#pagebreak()
+```
 
 #### SSP3-7.0
 
@@ -107,6 +134,9 @@ Maps of extreme daily temperature and precipitation per season over the entire s
 
 Maps of extreme daily temperature and precipitation per season over the entire simulation.
 :::
+```{raw} typst
+#pagebreak()
+```
 
 #### SSP5-8.5
 
@@ -117,6 +147,9 @@ Maps of extreme daily temperature and precipitation per season over the entire s
 
 Maps of extreme daily temperature and precipitation per season over the entire simulation.
 :::
+```{raw} typst
+#pagebreak()
+```
 
 ### UKESM1.0-LL
 
@@ -129,6 +162,9 @@ Maps of extreme daily temperature and precipitation per season over the entire s
 
 Maps of extreme daily temperature and precipitation per season over the entire simulation.
 :::
+```{raw} typst
+#pagebreak()
+```
 
 #### SSP5-8.5
 
@@ -139,6 +175,9 @@ Maps of extreme daily temperature and precipitation per season over the entire s
 
 Maps of extreme daily temperature and precipitation per season over the entire simulation.
 :::
+```{raw} typst
+#pagebreak()
+```
 
 ### MRI-ESM2.0
 
@@ -151,6 +190,9 @@ Maps of extreme daily temperature and precipitation per season over the entire s
 
 Maps of extreme daily temperature and precipitation per season over the entire simulation.
 :::
+```{raw} typst
+#pagebreak()
+```
 
 #### SSP5-3.4-OS
 
@@ -161,6 +203,9 @@ Maps of extreme daily temperature and precipitation per season over the entire s
 
 Maps of extreme daily temperature and precipitation per season over the entire simulation.
 :::
+```{raw} typst
+#pagebreak()
+```
 
 #### SSP5-8.5
 
@@ -171,6 +216,9 @@ Maps of extreme daily temperature and precipitation per season over the entire s
 
 Maps of extreme daily temperature and precipitation per season over the entire simulation.
 :::
+```{raw} typst
+#pagebreak()
+```
 
 ### NorESM2-MM
 
@@ -183,4 +231,7 @@ Maps of extreme daily temperature and precipitation per season over the entire s
 
 Maps of extreme daily temperature and precipitation per season over the entire simulation.
 :::
+```{raw} typst
+#pagebreak()
+```
 
