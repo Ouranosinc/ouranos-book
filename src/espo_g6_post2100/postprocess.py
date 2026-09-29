@@ -25,7 +25,11 @@ url = "https://pavics.ouranos.ca/twitcher/ows/proxy/thredds/catalog/datasets/sim
 
 def decadal_stats():
     """Compute the decadal min, max and mean of all ESPO-G6-post2100 
-    bias-adjusted simulation."""
+    bias-adjusted simulation.
+    
+    This computation takes a long while, and dask is possibly not the best option
+    here. A suggestion by Travis is to use ``mp.Pool``. 
+    """
 
     # Create catalog
     cat = TDSCatalog(url)

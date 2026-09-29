@@ -3,8 +3,8 @@ title: User Guide
 abstract: ESPO-G6-post2100 is a small ensemble of climate projections over North America extending from 1950 to 2300. Using and interpreting simulations extending so far into the future comes with challenges. This guide is meant to address some of the issues users will be faced with when using projections from this ensemble. [Link to data](https://pavics.ouranos.ca/twitcher/ows/proxy/thredds/catalog/birdhouse/disk3/ouranos/ESPO-G/ESPO-G6-post2100_v1.0/catalog.html)
 subtitle: Context and issues
 authors:
-  - bresson
   - huard
+  - bresson
 license:
   content: CC-BY-SA-3.0
 open_access: true
@@ -18,7 +18,7 @@ bibliography:
 
 The intent of this document is to provide guidance on the use and interpretation of ESPO-G6-post2100 [@lavoie_small_2026], a relatively small ensemble of bias-adjusted climate model simulations that covers North America (see {ref}`fig:map`) over the period 1950–2300. To our knowledge, it is the first publicly available bias-adjusted CMIP6 climate projection ensemble dataset extending beyond 2100. There is comparatively little experience with the use of post-2100 simulations, and as a consequence, end-users should exercise caution using and interpreting the results. This document is meant to highlight limitations and potential pitfalls, building on an analysis of the simulations themselves and broader reflections emerging from a literature review on climate services post-2100 [@huard_systematic_2026].
 
-:::{figure} figs/graph_guide_map.png
+:::{figure} figs/graph_domain_map.png
 :label: fig:map
 :width: 60%
 
@@ -27,7 +27,7 @@ Topography over dataset domain.
 
 The ESPO-G6-post2100 ensemble includes 17 bias-adjusted climate model simulations ({ref}`fig:SimESPO`). Raw simulations were bias-adjusted with the ESPO method [@lavoie_espo_2024] using CaSR 3.2 as the reference [@khedhaouiria_canadian_2026]. Health checks were performed to ensure a robust ensemble without corrupted data (see Section [](#evaluation)). The ensemble horizontal resolution is 10 km. The variables available in the dataset are maximum and minimum daily temperature and daily precipitation. For a more detailed dataset description, please refer to [@lavoie_small_2026].
 
-:::{figure} figs/graph_espo-g6-c3-p2100_sims.png
+:::{figure} figs/graph_espo_g6_sims.pdf
 :label: fig:SimESPO
 :width: 95%
 
@@ -43,7 +43,7 @@ Climate projections are the result of multiple decisions made by different scien
 
 Before 2100, GHG and aerosol emissions used by ScenarioMIP [@oneill_scenario_2016; @tebaldi_climate_2021] are simulated by Integrated Assessment Models (IAM), models that describe interactions between demographic, economic, technological and political trends and their influence on GHG emissions. As a result, pre-2100 emissions follow internally consistent pathways in line with the hypotheses underlying IAMs. After 2100, emissions pathways are extended on the basis of simple hypotheses, such as a steady return to zero emissions at some given year. The switch to those so-called _stylized pathways_ causes abrupt changes in emission pathways that break the internal consistency of IAMs and lead to unrealistically abrupt changes in emissions (see {ref}`fig:ssps`).
 
-:::{figure} figs/graph_compare_scenario_emissions.png
+:::{figure} figs/graph_compare_scenario_emissions.pdf
 :label: fig:ssps
 :width: 95%
 
@@ -62,7 +62,7 @@ $$
 
 where $\mathrm{TCRE}$ is the transient response to cumulative carbon emissions, a constant quantifying the change in global temperature as a result of cumulative carbon emissions. If the spread in cumulative emissions ($\delta E$) increases across pathways, it will lead to an increase in the spread in temperature change. And indeed, {ref}`fig:cume` shows clearly that differences in cumulative emissions grow until 2250, even as all emissions go back to zero.
 
-:::{figure} figs/graph_ssp_cumulative_emissions.png
+:::{figure} figs/graph_ssp_cumulative_emissions.pdf
 :label: fig:cume
 :width: 95%
 
@@ -105,7 +105,7 @@ This section discusses issues with ESPO-G6-post2100 simulations. It is divided i
 
 Here, time series of decadal mean temperature {math}`(\frac{t_{min} + t_{max}}{2})` and mean precipitation are shown for each of the 24 region shown in @fig:bukovsky. The actual figures are in the [](#sec:ts) appendix, simply click on the link appearing in  @table-fig-ts. 
 
-:::{figure} figs/graph_guide_bukovski.png
+:::{figure} figs/graph_bukovsky_map.png
 :label: fig:bukovsky
 :width: 60%
 
@@ -165,14 +165,24 @@ ESPO-G6-post2100 data can be downloaded as netCDF files or streamed through the 
 ```{bibliography}
 ```
 
+```{raw} typst
+#pagebreak()
+```
 
 # Appendix
 
 (sec:ts)=
 ## Regional time series
 
-:::{include} annex_figs_ts.md
-:::    
++++{"no-pdf": true}
+```{include} annex_figs_ts_html.md
+```
++++
++++{"no-pdf": false}
+```{include} annex_figs_ts_pdf.md
+```
++++
+
 
 (sec:maps)=
 ## Extremes values
