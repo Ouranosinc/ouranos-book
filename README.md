@@ -8,11 +8,22 @@ Public docs for research projects, datasets, etc.
 mamba install -c conda-forge "jupyter-book"
 ```
 
-Note that all figures (*.png, *.jpg, *.svg, *.pdf) are committed to this repo through `git lfs`. This means that only the text content is version controlled, not the graphical content. This is done to avoid cluttering the repo with multiple versions of the same figures.
+Note that all figures (*.png, *.jpg, *.svg, *.pdf) are committed to this repo through `git lfs`. This means that only the text content is version controlled, not the graphical content. This is done to avoid cluttering the repo with multiple versions of the same figures. You may need to initialize LFS using `git lfs install` before cloning or pulling from the repo. If not available on your platform git-lfs can be installed in the Python environment.
+
+```bash
+mamba install git-lfs"
+```
+
+Jupyter Book uses imagemagick. If that is not available on your platform (Mac, Windows) it can be added in the Python environment:
+
+```bash
+
+mamba install imagemagick
+```
 
 To export to PDF, also install ``typst``
 
-``bash
+```bash
 
 mamba install typst
 ```
