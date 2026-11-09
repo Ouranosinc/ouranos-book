@@ -25,7 +25,7 @@ The intent of this document is to provide guidance on the use and interpretation
 Topography over dataset domain.
 :::
 
-The ESPO-G6-post2100 ensemble includes 17 bias-adjusted climate model simulations ({ref}`fig:SimESPO`). Raw simulations were bias-adjusted with the ESPO method [@lavoie_espo_2024] using CaSR 3.2 as the reference [@khedhaouiria_canadian_2026]. Health checks were performed to ensure a robust ensemble without corrupted data (see Section [](#evaluation)). The ensemble horizontal resolution is 10 km. The variables available in the dataset are maximum and minimum daily temperature and daily precipitation. For a more detailed dataset description, please refer to [@lavoie_small_2026].
+The ESPO-G6-post2100 ensemble includes 17 bias-adjusted climate model simulations ({ref}`fig:SimESPO`). Raw simulations were bias-adjusted with the ESPO method [@lavoie_espo_2024] using CaSR 3.2 as the reference [@khedhaouiria_canadian_2026]. Health checks were performed to ensure a robust ensemble without corrupted data (see Section [](#evaluation)). The ensemble's horizontal resolution is 10 km. The variables available in the dataset are maximum and minimum daily temperature and daily precipitation. For a more detailed dataset description, please refer to [@lavoie_small_2026].
 
 :::{figure} figs/graph_espo_g6_sims.pdf
 :label: fig:SimESPO
