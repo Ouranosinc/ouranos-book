@@ -11,8 +11,11 @@ project:
   github: ouranosinc/ouranos-book
   exports:
     - format: pdf
+      id: espo-g6-post2100
       template: lapreprint-typst
-      articles: espo-g6-post2100/content.md
+      articles: 
+        - espo-g6-post2100/intro.md
+        - espo-g6-post2100/content.md
       output: exports/espo-g6-post2100.pdf
     
 site:
