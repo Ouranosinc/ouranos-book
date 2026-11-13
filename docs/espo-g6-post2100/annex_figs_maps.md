@@ -9,7 +9,7 @@
 
 Maps of extreme daily temperature and precipitation per season over the entire simulation.
 :::
-```{raw} typst
+```{raw:typst}
 #pagebreak()
 ```
 
@@ -24,7 +24,7 @@ Maps of extreme daily temperature and precipitation per season over the entire s
 
 Maps of extreme daily temperature and precipitation per season over the entire simulation.
 :::
-```{raw} typst
+```{raw:typst}
 #pagebreak()
 ```
 
@@ -37,7 +37,7 @@ Maps of extreme daily temperature and precipitation per season over the entire s
 
 Maps of extreme daily temperature and precipitation per season over the entire simulation.
 :::
-```{raw} typst
+```{raw:typst}
 #pagebreak()
 ```
 
@@ -52,7 +52,7 @@ Maps of extreme daily temperature and precipitation per season over the entire s
 
 Maps of extreme daily temperature and precipitation per season over the entire simulation.
 :::
-```{raw} typst
+```{raw:typst}
 #pagebreak()
 ```
 
@@ -65,7 +65,7 @@ Maps of extreme daily temperature and precipitation per season over the entire s
 
 Maps of extreme daily temperature and precipitation per season over the entire simulation.
 :::
-```{raw} typst
+```{raw:typst}
 #pagebreak()
 ```
 
@@ -78,7 +78,7 @@ Maps of extreme daily temperature and precipitation per season over the entire s
 
 Maps of extreme daily temperature and precipitation per season over the entire simulation.
 :::
-```{raw} typst
+```{raw:typst}
 #pagebreak()
 ```
 
@@ -93,7 +93,7 @@ Maps of extreme daily temperature and precipitation per season over the entire s
 
 Maps of extreme daily temperature and precipitation per season over the entire simulation.
 :::
-```{raw} typst
+```{raw:typst}
 #pagebreak()
 ```
 
@@ -108,7 +108,7 @@ Maps of extreme daily temperature and precipitation per season over the entire s
 
 Maps of extreme daily temperature and precipitation per season over the entire simulation.
 :::
-```{raw} typst
+```{raw:typst}
 #pagebreak()
 ```
 
@@ -121,7 +121,7 @@ Maps of extreme daily temperature and precipitation per season over the entire s
 
 Maps of extreme daily temperature and precipitation per season over the entire simulation.
 :::
-```{raw} typst
+```{raw:typst}
 #pagebreak()
 ```
 
@@ -134,7 +134,7 @@ Maps of extreme daily temperature and precipitation per season over the entire s
 
 Maps of extreme daily temperature and precipitation per season over the entire simulation.
 :::
-```{raw} typst
+```{raw:typst}
 #pagebreak()
 ```
 
@@ -147,7 +147,7 @@ Maps of extreme daily temperature and precipitation per season over the entire s
 
 Maps of extreme daily temperature and precipitation per season over the entire simulation.
 :::
-```{raw} typst
+```{raw:typst}
 #pagebreak()
 ```
 
@@ -162,7 +162,7 @@ Maps of extreme daily temperature and precipitation per season over the entire s
 
 Maps of extreme daily temperature and precipitation per season over the entire simulation.
 :::
-```{raw} typst
+```{raw:typst}
 #pagebreak()
 ```
 
@@ -175,7 +175,7 @@ Maps of extreme daily temperature and precipitation per season over the entire s
 
 Maps of extreme daily temperature and precipitation per season over the entire simulation.
 :::
-```{raw} typst
+```{raw:typst}
 #pagebreak()
 ```
 
@@ -190,7 +190,7 @@ Maps of extreme daily temperature and precipitation per season over the entire s
 
 Maps of extreme daily temperature and precipitation per season over the entire simulation.
 :::
-```{raw} typst
+```{raw:typst}
 #pagebreak()
 ```
 
@@ -203,7 +203,7 @@ Maps of extreme daily temperature and precipitation per season over the entire s
 
 Maps of extreme daily temperature and precipitation per season over the entire simulation.
 :::
-```{raw} typst
+```{raw:typst}
 #pagebreak()
 ```
 
@@ -216,7 +216,7 @@ Maps of extreme daily temperature and precipitation per season over the entire s
 
 Maps of extreme daily temperature and precipitation per season over the entire simulation.
 :::
-```{raw} typst
+```{raw:typst}
 #pagebreak()
 ```
 
@@ -231,7 +231,7 @@ Maps of extreme daily temperature and precipitation per season over the entire s
 
 Maps of extreme daily temperature and precipitation per season over the entire simulation.
 :::
-```{raw} typst
+```{raw:typst}
 #pagebreak()
 ```
 

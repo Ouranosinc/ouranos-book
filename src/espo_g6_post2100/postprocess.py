@@ -99,10 +99,10 @@ def run_all(path: Path):
             kb[v] = keepbits[vn]
         
         out = xb.xr_bitround(out, kb)    
-        out.to_compressed_netcdf(out_dir / "stats_" + path.name)
+        out.to_compressed_netcdf(out_dir / ("stats_" + path.name))
 
         sa = xb.xr_bitround(sa, keepbits)    
-        sa.to_compressed_netcdf(out_dir / "savg_" + path.name)
+        sa.to_compressed_netcdf(out_dir / ("savg_" + path.name))
 
 
 def merge_savg():

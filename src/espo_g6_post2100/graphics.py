@@ -3,12 +3,14 @@ import json
 import re
 from pathlib import Path
 import datetime as dt
+import warnings
 import numpy as np
 import xarray as xr
 import matplotlib as mpl
 from matplotlib import pyplot as plt
 import matplotlib.dates as mdates
 import matplotlib.transforms as mtransforms
+from matplotlib.collections import LineCollection
 import matplotlib.patches as mpatch
 from matplotlib.patches import FancyBboxPatch
 from mpl_toolkits.axes_grid1 import make_axes_locatable
@@ -36,6 +38,7 @@ Graphics:
  - ``graph_bukovsky_map``: Bukovsky regions.
  - ``graph_guide_region_ts``: Time series of spatial averages
  - ``graph_guide_maps``: Maps of absolute min/max values
+ - ``graph_gwl_schematic``: Schematic of global warming levels definitions
 
 Note that the time series graphic includes SVG interactivity. 
 I first create the figure elements, then save the figure in SVG and 
@@ -532,6 +535,7 @@ def interactive_legend_control_svg(fig, legend, targets) -> str:
         control.set("data-handle", handle_gid)
         control.set("data-label", label_gid)
         control.set("role", "button")
+        control.set("aria-label", str(gid))
         control.set("tabindex", "0")
         control.set("aria-controls", " ".join(target_gids))
         control.set("aria-pressed", "true")
@@ -583,6 +587,94 @@ def interactive_legend_control_svg(fig, legend, targets) -> str:
     """
     root.append(ET.XML(script))
     return ET.tostring(root, encoding="unicode", xml_declaration=True)
+
+
+def graph_gwl_schematic(lang="fr"):
+    fig, ax = plt.subplots()
+    def sigmoid(x, k, x0):
+        return 1 / (1 + np.exp(-k * (x - x0)))
+
+    def f(x, y0, rise, drop):
+        return (
+            y0
+            + rise * sigmoid(x, .04, 2030)
+            - drop * sigmoid(x, .03, 2150)
+        )
+
+    x = np.linspace(1900, 2300, 400)
+    y = f(x, 0, rise=3.5, drop=2)
+    xy = np.stack((x, y), axis=-1)
+
+    lw = 10
+    ih = 0 # np.argwhere(x > 1950)[0].item()
+    it = np.argmax(y).item()
+    pw = 10
+    ir = np.argwhere(x > 2200)[0].item()
+    i15 = np.argwhere(y > 1.5)[0].item()
+    
+
+    labels = {"en": {"t": "Transient",
+                     "p": "Peak", 
+                     "r": "Reversal", 
+                     "s": "Stabilization" },
+              "fr": {"t": "Transitoire",
+                     "p": "Pic", 
+                     "r": "Renversement", 
+                     "s": "Stabilisation" }
+                     }
+
+    cmap = mpl.colors.ListedColormap(["#88232377", "#882323", "#713DAC", "#3C723C", "#36454F"],name="gwl")
+
+    segments = [xy[ih:i15-10+1], xy[i15-10:i15+11], xy[i15+10:it-pw+1], xy[it-pw:it+pw+1], xy[it+pw:ir+1    ], xy[ir:]]
+    c = [0, 1, 0, 2, 3, 4]
+
+    lc = LineCollection(segments, array=c, cmap=cmap, linewidth=lw)
+    ax.add_collection(lc)
+
+    # Create proxy artists for the legend
+    from matplotlib.lines import Line2D
+    proxies = [Line2D([0], [0], color=cmap(i), lw=lw) for i in range(1,5)]
+    leg = ax.legend(proxies, [labels[lang][k] for k in ["t", "p", "r", "s"]], frameon=False, loc="lower right")
+
+    fancy(ax)
+    if lang == "fr":
+        ax.set_ylabel("Degré de réchauffement (°C)")
+    elif lang == "en":
+        ax.set_ylabel("Global warming level (°C)")
+
+    ax.set_yticks(np.arange(0, 3.5, .5))
+    
+    if lang == "fr":
+        leg.set_title("Degrés de réchauffement")
+    elif lang == "en":
+        leg.set_title("Global warming levels")
+    leg._legend_box.align = "left"
+
+    #ax.axhline(1.5, color="gray", linestyle="--", lw=1)
+    # Draw arrow from y axis at 1.5C to the corresponding point on the curve
+    ax.annotate(
+        "",
+        xy=(x[i15], y[i15]),
+        xytext=(1900, 1.5),
+        arrowprops=dict(arrowstyle="->", color="black", lw=1.5)
+    )
+    ax.annotate(
+        "",
+        xy=(x[i15], 0),
+        xytext=(x[i15], y[i15]),
+        arrowprops=dict(arrowstyle="->", color="black", lw=1.5)
+        )
+    
+    ax.axvspan(x[i15-10], x[i15+10], 0, .02, color="#882323")
+    ax.axvspan(x[i15-10], x[i15+10], 0, 1, color="#882323", alpha=.1)
+    # Dual transform with x-axis: data, y-axis: axes fraction
+    ax.text(x[i15], 1, "20 ans", ha="center", va="bottom", 
+            transform=mpl.transforms.blended_transform_factory(ax.transData, ax.transAxes))
+    #ax.fill_between(x[i15-10:i15+11], 0, y[i15-10:i15+11], color="#882323", alpha=.1)
+    ax.set_ylim(0, 3)
+    ax.set_xlim(1900, 2300)
+    fig.name = "graph_gwl_schematic"
+    return fig
 
 
 def fancy(ax):
@@ -679,3 +771,60 @@ def split_across_dateline(geom: gpd.GeoDataFrame, kind="dateline") -> sg.MultiPo
     
     # Project back to lat/lon   
     return gpd.GeoDataFrame(geometry=poly.to_crs("EPSG:4326"))
+
+from matplotlib.collections import LineCollection
+
+
+def colored_line(x, y, c, ax=None, **lc_kwargs):
+    """
+    Plot a line with a color specified along the line by a third value.
+
+    It does this by creating a collection of line segments. Each line segment is
+    made up of two straight lines each connecting the current (x, y) point to the
+    midpoints of the lines connecting the current point with its two neighbors.
+    This creates a smooth line with no gaps between the line segments.
+
+    Parameters
+    ----------
+    x, y : array-like
+        The horizontal and vertical coordinates of the data points.
+    c : array-like
+        The color values, which should be the same size as x and y.
+    ax : matplotlib.axes.Axes, optional
+        The axes to plot on. If not provided, the current axes will be used.
+    **lc_kwargs
+        Any additional arguments to pass to matplotlib.collections.LineCollection
+        constructor. This should not include the array keyword argument because
+        that is set to the color argument. If provided, it will be overridden.
+
+    Returns
+    -------
+    matplotlib.collections.LineCollection
+        The generated line collection representing the colored line.
+    """
+    if "array" in lc_kwargs:
+        warnings.warn(
+            'The provided "array" keyword argument will be overridden',
+            UserWarning,
+            stacklevel=2,
+        )
+
+    xy = np.stack((x, y), axis=-1)
+    xy_mid = np.concat(
+        (xy[0, :][None, :], (xy[:-1, :] + xy[1:, :]) / 2, xy[-1, :][None, :]), axis=0
+    )
+    segments = np.stack((xy_mid[:-1, :], xy, xy_mid[1:, :]), axis=-2)
+    # Note that
+    # segments[0, :, :] is [xy[0, :], xy[0, :], (xy[0, :] + xy[1, :]) / 2]
+    # segments[i, :, :] is [(xy[i - 1, :] + xy[i, :]) / 2, xy[i, :],
+    #     (xy[i, :] + xy[i + 1, :]) / 2] if i not in {0, len(x) - 1}
+    # segments[-1, :, :] is [(xy[-2, :] + xy[-1, :]) / 2, xy[-1, :], xy[-1, :]]
+
+    lc_kwargs["array"] = c
+    lc = LineCollection(segments, **lc_kwargs)
+
+    # Plot the line collection to the axes
+    ax = ax or plt.gca()
+    ax.add_collection(lc)
+
+    return lc

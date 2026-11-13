@@ -41,9 +41,6 @@ def save_ts_table_and_annexes():
         
         Decadal mean time series of temperature and precipitation over the {region} region.
         :::
-        ```{{raw}} typst
-        #pagebreak()
-        ```
         """
     )
 
@@ -57,7 +54,7 @@ def save_ts_table_and_annexes():
 
         Decadal mean time series of temperature and precipitation over the {region} region.
         :::
-        ```{{raw}} typst
+        ```{{raw:typst}}
         #pagebreak()
         ```
         """
@@ -131,7 +128,7 @@ def save_maps_table_and_annexes():
                 
             Maps of extreme daily temperature and precipitation per season over the entire simulation.
             :::
-            ```{{raw}} typst
+            ```{{raw:typst}}
             #pagebreak()
             ```
             """
