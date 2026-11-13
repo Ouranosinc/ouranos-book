@@ -178,7 +178,7 @@ ESPO-G6-post2100 data can be downloaded as netCDF files or streamed through the 
 ```{include} annex_figs_ts_html.md
 ```
 +++
-+++{"no-pdf": false}
++++{"no-html": true}
 ```{include} annex_figs_ts_pdf.md
 ```
 +++

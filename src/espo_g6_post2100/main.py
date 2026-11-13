@@ -21,7 +21,7 @@ def make_data_analysis():
     # Create final data for graphics
     paths = Path("data").glob("qs_*.nc")
     for path in paths:
-        pp.run(path)
+        pp.run_all(path)
 
 
 def make_graphics():
