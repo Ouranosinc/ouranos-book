@@ -16,6 +16,7 @@ project:
       articles: 
         - espo-g6-post2100/intro.md
         - espo-g6-post2100/content.md
+        - espo-g6-post2100/how-to.ipynb
       output: exports/espo-g6-post2100.pdf
     
 site:
