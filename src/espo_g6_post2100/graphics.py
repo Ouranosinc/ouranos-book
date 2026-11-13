@@ -532,6 +532,7 @@ def interactive_legend_control_svg(fig, legend, targets) -> str:
         control.set("data-handle", handle_gid)
         control.set("data-label", label_gid)
         control.set("role", "button")
+        control.set("aria-label", str(gid))
         control.set("tabindex", "0")
         control.set("aria-controls", " ".join(target_gids))
         control.set("aria-pressed", "true")
