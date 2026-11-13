@@ -19,6 +19,8 @@ mamba install typst
 
 ## Build 
 
+To launch an HTML web server, go into the ``docs`` directory, then run jupyter book:
+
 ```bash
 
 jupyter book start
@@ -26,7 +28,11 @@ jupyter book start
 The result should be visible in your browser at http://localhost:3000
 
 
+To create PDFs of individual sections, run:
+```bash
 
+jupyter book build --pdf
+```
 
 
 

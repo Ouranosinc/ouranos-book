@@ -18,5 +18,4 @@ Links to the time series figures for each Bukovsky region.
 | Mezquital | @fig-ts-Mezquital || WestBoreal | @fig-ts-WestBoreal |
 | MidAtlantic | @fig-ts-MidAtlantic || WestTaiga | @fig-ts-WestTaiga |
 | NPlains | @fig-ts-NPlains || WestTundra | @fig-ts-WestTundra |
-| | | | | | |
 :::
