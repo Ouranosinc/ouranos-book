@@ -165,7 +165,7 @@ ESPO-G6-post2100 data can be downloaded as netCDF files or streamed through the 
 ```{bibliography}
 ```
 
-```{raw} typst
+```{raw:typst}
 #pagebreak()
 ```
 
