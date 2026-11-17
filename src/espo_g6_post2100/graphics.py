@@ -46,8 +46,14 @@ edit that SVG to add interactivity (tooltips, clickable legend items).
 """
 
 @mpl.rc_context(context)
-def graph_espo_g6_sims():
-    """Graph number of ESPO-G6-C3-P2100 simulations per year from 2005 to 2300, color-coded by scenario."""
+def graph_espo_g6_sims(lang="en"):
+    """Graph number of ESPO-G6-C3-P2100 simulations per year from 2005 to 2300, color-coded by scenario.
+
+    Parameters
+    ----------
+    lang : str, default "en"
+        Language for labels and titles.
+    """
     with open(config.DATA / "espo-g6-p2100_attributes.json") as f:
         attrs = json.load(f)
 
@@ -103,12 +109,12 @@ def graph_espo_g6_sims():
     ax.set_xticks(["2100", "2200", "2300"])
     ax.set_xticklabels(["      2100", "", "2300      "])
     ax.set_xlim(dt.datetime(2100, 1, 1), dt.datetime(2300, 1, 1))
-    fig.name = "graph_espo_g6_sims"
+    fig.name = "graph_espo_g6_sims" + "_" + lang
     return fig
 
 
 @mpl.rc_context(context)
-def graph_ssp_cumulative_emissions():
+def graph_ssp_cumulative_emissions(lang="en"):
     obs = gcb.load().sel(time=slice("1850", None))
     e6 = ssp_emissions.load().sel(time=slice("1850", "2300"))
 
@@ -120,13 +126,15 @@ def graph_ssp_cumulative_emissions():
     for i, exp in enumerate(['ssp119', 'ssp126', 'ssp245', 'ssp370', 'ssp434', 'ssp460', 'ssp534-over', 'ssp585']):
         y = c6.sel(experiment_id=exp)
         ax.plot(y.time.dt.year, y.values, '-', lw=1, color=ecolors[exp], label=elabels[exp])
+    
     ax.legend(loc="upper left", bbox_to_anchor=(.01, 1.03), frameon=False, ncol=1,
               fontsize="small", handlelength=1.5, handletextpad=0.3, borderaxespad=0, columnspacing=.5, 
-              title="Emission pathways")
-    ax.set_ylabel("Cumulative CO₂ emissions (PgC)")
+              title="Emission pathways" if lang == "en" else "Scénarios d'émissions")
+    lab = "Cumulative CO₂ emissions (PgC)" if lang == "en" else "Émissions cumulées de CO₂ (PgC)"
+    ax.set_ylabel(lab)
     fancy(ax)
     ax.set_xlim(1850, 2300)
-    fig.name = "graph_ssp_cumulative_emissions"
+    fig.name = "graph_ssp_cumulative_emissions" + "_" + lang
     return fig
 
 
@@ -161,24 +169,29 @@ def graph_compare_scenario_emissions(lang="en", show_rcp=True):
 
         if lang == "en":
             ax.set_ylabel("CO₂ emissions (PgC)")
+            iam = "IAM emissions"
+            sty = "Stylized emissions"
         elif lang == "fr":
             ax.set_ylabel("Émissions de CO₂ (PgC)")
+            iam = "Émissions simulées"
+            sty = "Émissions stylisées"
 
         fancy(ax)
         ax.axvline(2100, ymax=1, color="#3B3B3B", lw=1, clip_on=False, alpha=1)
         yt = 1.05
         trans = mpl.transforms.blended_transform_factory(ax.transData, ax.transAxes)
         ax.set_xlim(1950, 2300)
-        ax.text(2095, yt, "IAM emissions", transform=trans, ha="right", color="w", fontsize=10)
-        ax.text(2105, yt, "Stylized emissions", transform=trans, ha="left", color="w", fontsize=10)
+        
+        ax.text(2095, yt, iam, transform=trans, ha="right", color="w", fontsize=10)
+        ax.text(2105, yt, sty, transform=trans, ha="left", color="w", fontsize=10)
         ax.axvspan(2005, 2100-1, yt-.02, yt+.06, zorder=-10, color='#3B3B3B', clip_on=False)
         ax.axvspan(2100+1, 2300, yt-.02, yt+.06, zorder=-10, color='#3B3B3B', clip_on=False)
-        fig.name = "graph_compare_scenario_emissions"
+        fig.name = "graph_compare_scenario_emissions" + "_" + lang
         return fig
     
 
 @mpl.rc_context(context)
-def graph_ecs_sherwood():
+def graph_ecs_sherwood(lang="en"):
     """Graph the ECS values of the ESPO ensemble along with the ECS posterior from Sherwood."""
 
     # Load ECS values for ESPO models
@@ -212,18 +225,21 @@ def graph_ecs_sherwood():
 
     # Show AR6 likely range in IPCC blue
     ax.axvspan(2.5, 4, color="#1f77b4", alpha=0.3, edgecolor="none")  # AR6 likely range in IPCC blue
-    ax.text(3.25, 0.1*ax.get_ylim()[1], "AR6 likely range\n2.5–4°C", color="k", fontsize=9, ha="center")
+    lab = "IPCC AR6\nlikely range\n2.5–4°C" if lang == "en" else "Plage probable\nRE6 GIEC\n2.5–4°C"
+    ax.text(3.25, 0.1*ax.get_ylim()[1], lab, color="k", fontsize=9, ha="center")
 
-    ax.set_xlabel("Equilibrium Climate Sensitivity (°C)")
-    ax.set_ylabel("Probability density (°C$^{-1}$)")
+    xlab = "Equilibrium Climate Sensitivity (°C)" if lang == "en" else "Sensibilité climatique à l'équilibre (°C)"
+    ax.set_xlabel(xlab)
+    ylab = "Probability density (°C$^{-1}$)" if lang == "en" else "Densité de probabilité (°C$^{-1}$)"
+    ax.set_ylabel(ylab)
     ax.set_xlim(1, 7.5)
     fancy(ax)
-    fig.name = "graph_ecs_sherwood"
+    fig.name = "graph_ecs_sherwood" + "_" + lang
     return fig
 
 
 @mpl.rc_context(context)
-def graph_domain_map():
+def graph_domain_map(lang="en"):
     """Map of domain, showing elevation."""
 
     fig = plt.figure(figsize=(4, 4))
@@ -257,14 +273,15 @@ def graph_domain_map():
 
     
     cb = plt.colorbar(mappable=m, cax=ax_cb, orientation="horizontal")
-    cb.set_label("Elevation (m)")
+    lab = "Elevation (m)" if lang == "en" else "Altitude (m)"
+    cb.set_label(lab)
     fig.tight_layout()
-    fig.name = "graph_domain_map"
+    fig.name = "graph_domain_map" + "_" + lang
     return fig
 
 
 @mpl.rc_context(context)
-def graph_bukovsky_map():
+def graph_bukovsky_map(lang="en"):
     """Map of the Bukovski regions."""
 
     fig = plt.figure(figsize=(4, 4))
@@ -293,7 +310,7 @@ def graph_bukovsky_map():
 
 
 @mpl.rc_context(context)
-def graph_guide_region_ts(ds):
+def graph_guide_region_ts(ds, lang="en"):
     
     pat = r"(?<=\d)-(?=\d)"
     
@@ -673,7 +690,7 @@ def graph_gwl_schematic(lang="fr"):
     #ax.fill_between(x[i15-10:i15+11], 0, y[i15-10:i15+11], color="#882323", alpha=.1)
     ax.set_ylim(0, 3)
     ax.set_xlim(1900, 2300)
-    fig.name = "graph_gwl_schematic"
+    fig.name = "graph_gwl_schematic" + "_" + lang
     return fig
 
 
