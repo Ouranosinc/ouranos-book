@@ -1,0 +1,13 @@
+# conda env create -f environment.yml
+name: ouranos-book
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - jupyter-book
+  - git-lfs
+  - imagemagick
+  - typst  # for PDF
+  # required for build
+  - mystmd
+  - git
