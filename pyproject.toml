@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ouranos-book"
+version = "0.1.0"
+description = "Documentation site dependencies for Ouranos technical documentation"
+requires-python = ">=3.12"
+dependencies = [
+    "jupyter-book",
+]
+
+[tool.setuptools]
+packages = []

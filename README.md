@@ -4,6 +4,14 @@ Public docs for research projects, datasets, etc.
 
 ## Installation
 
+Install the documentation dependencies with:
+
+```bash
+pip install -r requirements.txt
+```
+
+Alternatively, install Jupyter Book with conda:
+
 ```bash
 mamba install -c conda-forge "jupyter-book"
 ```
