@@ -4,28 +4,30 @@ ESPO-G6-post2100 is a small ensemble of bias-adjusted CMIP6 simulations covering
 
 :::{aside} Deliverables 
 
-```{seealso} ESPO-G6-post2100
+```{seealso} Dataset
 
 A bias-adjusted ensemble of CMIP6 projections extending to 2300. 
 ([Published](https://pavics.ouranos.ca/twitcher/ows/proxy/thredds/catalog/datasets/simulations/bias_adjusted/cmip6/ouranos/ESPO-G/ESPO-G6-post2100v1.0/catalog.html))
 ```
 
-```{seealso} A systematic review of post-2100 climate change 
+```{seealso} Scientific papers
 
-A literature review of why and how climate scientists analyse climate simulations beyond 2100. ([In review](https://doi.org/10.22541/essoar.15008649/v))
-```
+A literature review of why and how climate scientists analyse climate simulations beyond 2100. ([Accepted for publication](https://doi.org/10.22541/essoar.15008649/v))
 
-
-```{seealso} Data paper
-
-A peer-review data paper describing the published data. (In progress)
+A peer-reviewed data paper describing the published data. (In review)
 
 ```
 
 ```{seealso} Case studies
 
-Three case studies in the mining sector using the ESPO-G6-post2100 ensemble. (In progress)
+Three case studies led by engineering firms using the  ESPO-G6-post2100 ensemble to model mine closure performance. (In progress)
 ```
+
+```{seealso} How-to
+
+A Python notebook demonstrating how to access and analyze the ESPO-G6-post2100 dataset. 
+```
+
 
 
 :::
@@ -34,4 +36,4 @@ This dataset is one of the deliverables from a [project](https://www.ouranos.ca/
 
 If you need technical support with the dataset, please contact pavics@ouranos.ca.
 
-The project was funded by Natural Resource Canada and the Plan pour une économie verte (Government of Québec).
+The project was funded by Natural Resource Canada and the Government of Québec through the Plan pour une économie verte.
