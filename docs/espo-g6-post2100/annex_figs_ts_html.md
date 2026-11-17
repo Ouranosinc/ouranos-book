@@ -5,7 +5,7 @@
 :label: fig-ts-Appalachia
 :width: 95%
 
-<iframe src="/annex/graph_guide_region_ts_Appalachia.svg"/>
+<iframe src="../annex/graph_guide_region_ts_Appalachia.svg"/>
 
 Decadal mean time series of temperature and precipitation over the Appalachia region.
 :::
@@ -16,7 +16,7 @@ Decadal mean time series of temperature and precipitation over the Appalachia re
 :label: fig-ts-CPlains
 :width: 95%
 
-<iframe src="/annex/graph_guide_region_ts_CPlains.svg"/>
+<iframe src="../annex/graph_guide_region_ts_CPlains.svg"/>
 
 Decadal mean time series of temperature and precipitation over the CPlains region.
 :::
@@ -27,7 +27,7 @@ Decadal mean time series of temperature and precipitation over the CPlains regio
 :label: fig-ts-CentralTundra
 :width: 95%
 
-<iframe src="/annex/graph_guide_region_ts_CentralTundra.svg"/>
+<iframe src="../annex/graph_guide_region_ts_CentralTundra.svg"/>
 
 Decadal mean time series of temperature and precipitation over the CentralTundra region.
 :::
@@ -38,7 +38,7 @@ Decadal mean time series of temperature and precipitation over the CentralTundra
 :label: fig-ts-DeepSouth
 :width: 95%
 
-<iframe src="/annex/graph_guide_region_ts_DeepSouth.svg"/>
+<iframe src="../annex/graph_guide_region_ts_DeepSouth.svg"/>
 
 Decadal mean time series of temperature and precipitation over the DeepSouth region.
 :::
@@ -49,7 +49,7 @@ Decadal mean time series of temperature and precipitation over the DeepSouth reg
 :label: fig-ts-EastBoreal
 :width: 95%
 
-<iframe src="/annex/graph_guide_region_ts_EastBoreal.svg"/>
+<iframe src="../annex/graph_guide_region_ts_EastBoreal.svg"/>
 
 Decadal mean time series of temperature and precipitation over the EastBoreal region.
 :::
@@ -60,7 +60,7 @@ Decadal mean time series of temperature and precipitation over the EastBoreal re
 :label: fig-ts-EastTaiga
 :width: 95%
 
-<iframe src="/annex/graph_guide_region_ts_EastTaiga.svg"/>
+<iframe src="../annex/graph_guide_region_ts_EastTaiga.svg"/>
 
 Decadal mean time series of temperature and precipitation over the EastTaiga region.
 :::
@@ -71,7 +71,7 @@ Decadal mean time series of temperature and precipitation over the EastTaiga reg
 :label: fig-ts-EastTundra
 :width: 95%
 
-<iframe src="/annex/graph_guide_region_ts_EastTundra.svg"/>
+<iframe src="../annex/graph_guide_region_ts_EastTundra.svg"/>
 
 Decadal mean time series of temperature and precipitation over the EastTundra region.
 :::
@@ -82,7 +82,7 @@ Decadal mean time series of temperature and precipitation over the EastTundra re
 :label: fig-ts-GreatBasin
 :width: 95%
 
-<iframe src="/annex/graph_guide_region_ts_GreatBasin.svg"/>
+<iframe src="../annex/graph_guide_region_ts_GreatBasin.svg"/>
 
 Decadal mean time series of temperature and precipitation over the GreatBasin region.
 :::
@@ -93,7 +93,7 @@ Decadal mean time series of temperature and precipitation over the GreatBasin re
 :label: fig-ts-GreatLakes
 :width: 95%
 
-<iframe src="/annex/graph_guide_region_ts_GreatLakes.svg"/>
+<iframe src="../annex/graph_guide_region_ts_GreatLakes.svg"/>
 
 Decadal mean time series of temperature and precipitation over the GreatLakes region.
 :::
@@ -104,7 +104,7 @@ Decadal mean time series of temperature and precipitation over the GreatLakes re
 :label: fig-ts-Mezquital
 :width: 95%
 
-<iframe src="/annex/graph_guide_region_ts_Mezquital.svg"/>
+<iframe src="../annex/graph_guide_region_ts_Mezquital.svg"/>
 
 Decadal mean time series of temperature and precipitation over the Mezquital region.
 :::
@@ -115,7 +115,7 @@ Decadal mean time series of temperature and precipitation over the Mezquital reg
 :label: fig-ts-MidAtlantic
 :width: 95%
 
-<iframe src="/annex/graph_guide_region_ts_MidAtlantic.svg"/>
+<iframe src="../annex/graph_guide_region_ts_MidAtlantic.svg"/>
 
 Decadal mean time series of temperature and precipitation over the MidAtlantic region.
 :::
@@ -126,7 +126,7 @@ Decadal mean time series of temperature and precipitation over the MidAtlantic r
 :label: fig-ts-NPlains
 :width: 95%
 
-<iframe src="/annex/graph_guide_region_ts_NPlains.svg"/>
+<iframe src="../annex/graph_guide_region_ts_NPlains.svg"/>
 
 Decadal mean time series of temperature and precipitation over the NPlains region.
 :::
@@ -137,7 +137,7 @@ Decadal mean time series of temperature and precipitation over the NPlains regio
 :label: fig-ts-NRockies
 :width: 95%
 
-<iframe src="/annex/graph_guide_region_ts_NRockies.svg"/>
+<iframe src="../annex/graph_guide_region_ts_NRockies.svg"/>
 
 Decadal mean time series of temperature and precipitation over the NRockies region.
 :::
@@ -148,7 +148,7 @@ Decadal mean time series of temperature and precipitation over the NRockies regi
 :label: fig-ts-NorthAtlantic
 :width: 95%
 
-<iframe src="/annex/graph_guide_region_ts_NorthAtlantic.svg"/>
+<iframe src="../annex/graph_guide_region_ts_NorthAtlantic.svg"/>
 
 Decadal mean time series of temperature and precipitation over the NorthAtlantic region.
 :::
@@ -159,7 +159,7 @@ Decadal mean time series of temperature and precipitation over the NorthAtlantic
 :label: fig-ts-PacificNW
 :width: 95%
 
-<iframe src="/annex/graph_guide_region_ts_PacificNW.svg"/>
+<iframe src="../annex/graph_guide_region_ts_PacificNW.svg"/>
 
 Decadal mean time series of temperature and precipitation over the PacificNW region.
 :::
@@ -170,7 +170,7 @@ Decadal mean time series of temperature and precipitation over the PacificNW reg
 :label: fig-ts-PacificSW
 :width: 95%
 
-<iframe src="/annex/graph_guide_region_ts_PacificSW.svg"/>
+<iframe src="../annex/graph_guide_region_ts_PacificSW.svg"/>
 
 Decadal mean time series of temperature and precipitation over the PacificSW region.
 :::
@@ -181,7 +181,7 @@ Decadal mean time series of temperature and precipitation over the PacificSW reg
 :label: fig-ts-Prairie
 :width: 95%
 
-<iframe src="/annex/graph_guide_region_ts_Prairie.svg"/>
+<iframe src="../annex/graph_guide_region_ts_Prairie.svg"/>
 
 Decadal mean time series of temperature and precipitation over the Prairie region.
 :::
@@ -192,7 +192,7 @@ Decadal mean time series of temperature and precipitation over the Prairie regio
 :label: fig-ts-SPlains
 :width: 95%
 
-<iframe src="/annex/graph_guide_region_ts_SPlains.svg"/>
+<iframe src="../annex/graph_guide_region_ts_SPlains.svg"/>
 
 Decadal mean time series of temperature and precipitation over the SPlains region.
 :::
@@ -203,7 +203,7 @@ Decadal mean time series of temperature and precipitation over the SPlains regio
 :label: fig-ts-SRockies
 :width: 95%
 
-<iframe src="/annex/graph_guide_region_ts_SRockies.svg"/>
+<iframe src="../annex/graph_guide_region_ts_SRockies.svg"/>
 
 Decadal mean time series of temperature and precipitation over the SRockies region.
 :::
@@ -214,7 +214,7 @@ Decadal mean time series of temperature and precipitation over the SRockies regi
 :label: fig-ts-Southeast
 :width: 95%
 
-<iframe src="/annex/graph_guide_region_ts_Southeast.svg"/>
+<iframe src="../annex/graph_guide_region_ts_Southeast.svg"/>
 
 Decadal mean time series of temperature and precipitation over the Southeast region.
 :::
@@ -225,7 +225,7 @@ Decadal mean time series of temperature and precipitation over the Southeast reg
 :label: fig-ts-Southwest
 :width: 95%
 
-<iframe src="/annex/graph_guide_region_ts_Southwest.svg"/>
+<iframe src="../annex/graph_guide_region_ts_Southwest.svg"/>
 
 Decadal mean time series of temperature and precipitation over the Southwest region.
 :::
@@ -236,7 +236,7 @@ Decadal mean time series of temperature and precipitation over the Southwest reg
 :label: fig-ts-WestBoreal
 :width: 95%
 
-<iframe src="/annex/graph_guide_region_ts_WestBoreal.svg"/>
+<iframe src="../annex/graph_guide_region_ts_WestBoreal.svg"/>
 
 Decadal mean time series of temperature and precipitation over the WestBoreal region.
 :::
@@ -247,7 +247,7 @@ Decadal mean time series of temperature and precipitation over the WestBoreal re
 :label: fig-ts-WestTaiga
 :width: 95%
 
-<iframe src="/annex/graph_guide_region_ts_WestTaiga.svg"/>
+<iframe src="../annex/graph_guide_region_ts_WestTaiga.svg"/>
 
 Decadal mean time series of temperature and precipitation over the WestTaiga region.
 :::
@@ -258,7 +258,7 @@ Decadal mean time series of temperature and precipitation over the WestTaiga reg
 :label: fig-ts-WestTundra
 :width: 95%
 
-<iframe src="/annex/graph_guide_region_ts_WestTundra.svg"/>
+<iframe src="../annex/graph_guide_region_ts_WestTundra.svg"/>
 
 Decadal mean time series of temperature and precipitation over the WestTundra region.
 :::

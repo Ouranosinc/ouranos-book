@@ -37,7 +37,7 @@ def save_ts_table_and_annexes():
         :label: fig-ts-{region}
         :width: 95%
 
-        <iframe src="/annex/graph_guide_region_ts_{region}.svg"/>
+        <iframe src="../annex/graph_guide_region_ts_{region}.svg"/>
         
         Decadal mean time series of temperature and precipitation over the {region} region.
         :::
