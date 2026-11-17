@@ -25,7 +25,7 @@ Three case studies led by engineering firms using the  ESPO-G6-post2100 ensemble
 
 ```{seealso} How-to
 
-A Python notebook demonstrating how to access and analyze the ESPO-G6-post2100 dataset. 
+A Python [notebook](./how-to.ipynb) demonstrating how to access and analyze the ESPO-G6-post2100 dataset. 
 ```
 
 
