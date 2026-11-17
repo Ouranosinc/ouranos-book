@@ -24,30 +24,30 @@ def make_data_analysis():
         pp.run_all(path)
 
 
-def make_graphics():
+def make_graphics(lang="en", fmt="png"):
     """Create graphics for the user guide."""
-    #fig = graphics.graph_domain_map()
-    #fig.savefig(FIG_DIR/f"{fig.name}.png")
-    #plt.close()
-
-    fig = graphics.graph_bukovsky_map()
-    fig.savefig(FIG_DIR/f"{fig.name}.png")
+    fig = graphics.graph_domain_map(lang=lang)
+    fig.savefig(FIG_DIR/f"{fig.name}.{fmt}")
     plt.close()
 
-    fig = graphics.graph_compare_scenario_emissions()
-    fig.savefig(FIG_DIR/f"{fig.name}.pdf")
+    fig = graphics.graph_bukovsky_map(lang=lang)
+    fig.savefig(FIG_DIR/f"{fig.name}.{fmt}")
+    plt.close()
+
+    fig = graphics.graph_compare_scenario_emissions(lang=lang)
+    fig.savefig(FIG_DIR/f"{fig.name}.{fmt}")
     plt.close()
     
-    fig = graphics.graph_ssp_cumulative_emissions()
-    fig.savefig(FIG_DIR/f"{fig.name}.pdf")
+    fig = graphics.graph_ssp_cumulative_emissions(lang=lang)
+    fig.savefig(FIG_DIR/f"{fig.name}.{fmt}")
     plt.close()
 
-    fig = graphics.graph_ecs_sherwood()
-    fig.savefig(FIG_DIR/f"{fig.name}.pdf")
+    fig = graphics.graph_ecs_sherwood(lang=lang)
+    fig.savefig(FIG_DIR/f"{fig.name}.{fmt}")
     plt.close()
 
-    fig = graphics.graph_espo_g6_sims()
-    fig.savefig(FIG_DIR/f"{fig.name}.pdf")
+    fig = graphics.graph_espo_g6_sims(lang=lang)
+    fig.savefig(FIG_DIR/f"{fig.name}.{fmt}")
     plt.close()
 
     #_make_ts()
